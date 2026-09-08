@@ -335,17 +335,7 @@ const EventDetails: React.FC = () => {
                   <p className="text-gray-400">Available for registration assistance and event queries</p>
                 </div>
 
-                <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-                  {/* Melvin first */}
-                  <div className="text-center p-4 bg-gray-800/50 rounded-lg border border-emerald-400/30">
-                    <div className="w-16 h-16 bg-emerald-400/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <span className="text-emerald-400 font-bold text-xl">M</span>
-                    </div>
-                    <h5 className="text-white font-semibold mb-1">Melvin</h5>
-                    <p className="text-emerald-400 font-mono text-sm">+91 90800 59840</p>
-                    <p className="text-gray-400 text-xs mt-1">Summit Coordinator</p>
-                  </div>
-
+                <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
                   <div className="text-center p-4 bg-gray-800/50 rounded-lg border border-cyan-400/30">
                     <div className="w-16 h-16 bg-cyan-400/20 rounded-full flex items-center justify-center mx-auto mb-3">
                       <span className="text-cyan-400 font-bold text-xl">V</span>
@@ -353,15 +343,6 @@ const EventDetails: React.FC = () => {
                     <h5 className="text-white font-semibold mb-1">Vijval</h5>
                     <p className="text-cyan-400 font-mono text-sm">+91 93243 84817</p>
                     <p className="text-gray-400 text-xs mt-1">Registration & General Queries</p>
-                  </div>
-
-                  <div className="text-center p-4 bg-gray-800/50 rounded-lg border border-purple-400/30">
-                    <div className="w-16 h-16 bg-purple-400/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <span className="text-purple-400 font-bold text-xl">H</span>
-                    </div>
-                    <h5 className="text-white font-semibold mb-1">Harsh</h5>
-                    <p className="text-purple-400 font-mono text-sm">+91 98906 62736</p>
-                    <p className="text-gray-400 text-xs mt-1">Technical Support & Workshops</p>
                   </div>
 
                   <div className="text-center p-4 bg-gray-800/50 rounded-lg border border-yellow-400/30">

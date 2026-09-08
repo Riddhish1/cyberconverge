@@ -766,9 +766,9 @@ const Registration: React.FC<RegistrationProps> = ({ selectedDay, onBack }) => {
                   <span className="text-cyan-400 font-mono">+91 93243 84817</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Phone className="w-4 h-4 text-purple-400" />
-                  <span className="text-gray-300">Harsh:</span>
-                  <span className="text-purple-400 font-mono">+91 98906 62736</span>
+                  <Phone className="w-4 h-4 text-yellow-400" />
+                  <span className="text-gray-300">HOD:</span>
+                  <span className="text-yellow-400 font-mono">+91 7702 669 040</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="w-4 h-4 text-green-400" />
