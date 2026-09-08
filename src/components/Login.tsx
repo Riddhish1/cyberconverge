@@ -45,11 +45,11 @@ const Login: React.FC = () => {
             </div>
             <h2 className="text-4xl font-black text-white mb-4">
               <span className="cyber-text-glow text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-lime-300">
-                CyberConverge 2025  
+                CyberConverge 2026
               </span>
             </h2>
             <p className="text-gray-300 text-lg">
-              Sign in with your Google account to register for CyberConverge 2025
+              Sign in with your Google account to register for CyberConverge 2026
             </p>
           </div>
 

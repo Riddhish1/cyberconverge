@@ -6,11 +6,11 @@ interface TimelineEvent {
   title: string;
   description: string;
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>> | string;
-  type: 'workshop' | 'session' | 'break' | 'networking' | 'competition';
+  type: 'workshop' | 'seminar' | 'session' | 'break' | 'networking' | 'competition';
 }
 
 const Timeline: React.FC = () => {
-  const [activeDay, setActiveDay] = useState<1 | 2>(1);
+  const [activeDay, setActiveDay] = useState<1 | 2 | 3 | 4 | 5 | 6>(1);
 
   const day1Schedule: TimelineEvent[] = [
     {
@@ -59,6 +59,214 @@ const Timeline: React.FC = () => {
 
   const day2Schedule: TimelineEvent[] = [
     {
+      time: '8:30 AM - 9:00 AM',
+      title: 'Opening Keynote: Building Trust Online',
+      description: 'A practical look at the people, processes, and technology shaping resilient digital communities',
+      icon: Shield,
+      type: 'session'
+    },
+    {
+      time: '9:00 AM - 10:30 AM',
+      title: 'Secure Coding Workshop',
+      description: 'Identify common application flaws and apply secure design patterns through guided exercises',
+      icon: Code,
+      type: 'workshop'
+    },
+    {
+      time: '10:30 AM - 11:00 AM',
+      title: 'Coffee & Community Connect',
+      description: 'Meet fellow builders, mentors, and security practitioners between sessions',
+      icon: Coffee,
+      type: 'networking'
+    },
+    {
+      time: '11:00 AM - 12:30 PM',
+      title: 'Web Application Security Seminar',
+      description: 'Threat modeling, authentication, and practical defenses for modern web applications',
+      icon: Bug,
+      type: 'session'
+    },
+    {
+      time: '12:30 PM - 1:30 PM',
+      title: 'Lunch Break',
+      description: 'Recharge and continue conversations with speakers and participants',
+      icon: Coffee,
+      type: 'break'
+    },
+    {
+      time: '1:30 PM - 4:00 PM',
+      title: 'Build a Secure API Workshop',
+      description: 'Hands-on API testing, input validation, secrets management, and access control',
+      icon: Terminal,
+      type: 'workshop'
+    },
+    {
+      time: '4:00 PM - 5:00 PM',
+      title: 'Ask the Experts',
+      description: 'Open panel on careers, certifications, internships, and security leadership',
+      icon: Users,
+      type: 'networking'
+    }
+  ];
+
+  const day3Schedule: TimelineEvent[] = [
+    {
+      time: '8:30 AM - 9:00 AM',
+      title: 'Day 3 Briefing & Threat Landscape',
+      description: 'Understand the attacks and defensive priorities shaping the current threat landscape',
+      icon: Eye,
+      type: 'session'
+    },
+    {
+      time: '9:00 AM - 10:30 AM',
+      title: 'SOC & SIEM Secrets',
+      description: 'Explore alert triage, log correlation, and practical Security Operations Center workflows',
+      icon: Eye,
+      type: 'workshop'
+    },
+    {
+      time: '10:30 AM - 11:00 AM',
+      title: 'Networking Break',
+      description: 'Exchange ideas with analysts, defenders, and aspiring security professionals',
+      icon: Users,
+      type: 'networking'
+    },
+    {
+      time: '11:00 AM - 12:30 PM',
+      title: 'DFIR Seminar',
+      description: 'Digital forensics, evidence handling, and incident response lessons from real investigations',
+      icon: Lock,
+      type: 'session'
+    },
+    {
+      time: '12:30 PM - 1:30 PM',
+      title: 'Lunch & Recharge',
+      description: 'Refuel before the afternoon blue team lab',
+      icon: Coffee,
+      type: 'break'
+    },
+    {
+      time: '1:30 PM - 4:30 PM',
+      title: 'Blue Team Incident Response Lab',
+      description: 'Contain a simulated breach, investigate indicators, and present a response plan',
+      icon: Shield,
+      type: 'workshop'
+    },
+    {
+      time: '4:30 PM - 5:00 PM',
+      title: 'Incident Debrief',
+      description: 'Compare team decisions and capture the most important defensive takeaways',
+      icon: Award,
+      type: 'session'
+    }
+  ];
+
+  const day4Schedule: TimelineEvent[] = [
+    {
+      time: '8:30 AM - 9:00 AM',
+      title: 'Security Leadership Seminar',
+      description: 'Connect technical security work to risk, governance, and responsible decision-making',
+      icon: UserCheck,
+      type: 'session'
+    },
+    {
+      time: '9:00 AM - 10:30 AM',
+      title: 'Cloud Security Workshop',
+      description: 'Secure identities, storage, networks, and workloads across modern cloud environments',
+      icon: Network,
+      type: 'workshop'
+    },
+    {
+      time: '10:30 AM - 11:00 AM',
+      title: 'Mentor Networking',
+      description: 'Small-group conversations with practitioners working across cloud and infrastructure security',
+      icon: Users,
+      type: 'networking'
+    },
+    {
+      time: '11:00 AM - 12:30 PM',
+      title: 'DevSecOps in Practice',
+      description: 'Integrate security checks into CI/CD pipelines without slowing engineering teams down',
+      icon: Zap,
+      type: 'seminar'
+    },
+    {
+      time: '12:30 PM - 1:30 PM',
+      title: 'Lunch Break',
+      description: 'Recharge and connect with the DevSecOps community',
+      icon: Coffee,
+      type: 'break'
+    },
+    {
+      time: '1:30 PM - 4:00 PM',
+      title: 'Cloud Attack & Defense Workshop',
+      description: 'Trace an attack path and harden a cloud environment through guided defensive challenges',
+      icon: Target,
+      type: 'workshop'
+    },
+    {
+      time: '4:00 PM - 5:00 PM',
+      title: 'Architecture Review Clinic',
+      description: 'Review participant designs and turn security principles into actionable improvements',
+      icon: Code,
+      type: 'session'
+    }
+  ];
+
+  const day5Schedule: TimelineEvent[] = [
+    {
+      time: '8:30 AM - 9:00 AM',
+      title: 'Red Team Briefing',
+      description: 'Plan an ethical engagement with clear scope, rules of engagement, and reporting goals',
+      icon: Flame,
+      type: 'session'
+    },
+    {
+      time: '9:00 AM - 10:30 AM',
+      title: 'Bug Bounty Workshop',
+      description: 'Find, validate, and responsibly report vulnerabilities using a repeatable workflow',
+      icon: Bug,
+      type: 'workshop'
+    },
+    {
+      time: '10:30 AM - 11:00 AM',
+      title: 'Community Coffee Break',
+      description: 'Share findings and compare approaches with ethical hackers and mentors',
+      icon: Coffee,
+      type: 'networking'
+    },
+    {
+      time: '11:00 AM - 12:30 PM',
+      title: 'Red Team Live Seminar',
+      description: 'Team tradecraft, command-and-control frameworks, and lessons from controlled engagements',
+      icon: Flame,
+      type: 'session'
+    },
+    {
+      time: '12:30 PM - 1:30 PM',
+      title: 'Lunch & Recharge',
+      description: 'Refuel before the afternoon team challenge',
+      icon: Coffee,
+      type: 'break'
+    },
+    {
+      time: '1:30 PM - 4:30 PM',
+      title: 'Purple Team Challenge',
+      description: 'Red and blue teams collaborate to attack, detect, and improve a live training environment',
+      icon: Target,
+      type: 'competition'
+    },
+    {
+      time: '4:30 PM - 5:00 PM',
+      title: 'Findings Showcase',
+      description: 'Teams present discoveries, defensive improvements, and standout techniques',
+      icon: Award,
+      type: 'session'
+    }
+  ];
+
+  const day6Schedule: TimelineEvent[] = [
+    {
       time: '8:00 AM - 8:30 AM',
       title: 'Check-in & Coffee Kickstart',
       description: 'Participants arrive, collect badges, and network informally',
@@ -67,31 +275,24 @@ const Timeline: React.FC = () => {
     },
     {
       time: '8:30 AM - 9:00 AM',
-      title: 'Grand Opening',
+      title: 'CyberConverge 2026 Grand Opening',
       description: 'Welcome remarks and housekeeping announcements',
       icon: UserCheck,
       type: 'session'
     },
     {
       time: '9:00 AM - 10:00 AM',
-      title: 'Inaugural Session',
+      title: 'Cybersecurity Futures Keynote',
       description: 'Address by Chief Guests, Law Enforcement Officials (CBI, Cyber Crime Wing, Local Police)',
       icon: Shield,
       type: 'session'
     },
     {
       time: '10:00 AM - 11:00 AM',
-      title: 'SOC & SIEM Secrets',
-      description: 'Exploring Security Operations Centers and Security Information and Event Management best practices',
+      title: 'Seminar Highlights & Research Talks',
+      description: 'Short talks from students, researchers, and practitioners on emerging security challenges',
       icon: Eye,
-      type: 'workshop'
-    },
-    {
-      time: '11:00 AM - 12:00 PM',
-      title: 'DFIR & Blue Teaming',
-      description: 'Incident Response, Digital Forensics methodologies, and threat mitigation strategies',
-      icon: Lock,
-      type: 'workshop'
+      type: 'session'
     },
     {
       time: '12:00 PM - 1:00 PM',
@@ -109,39 +310,41 @@ const Timeline: React.FC = () => {
     },
     {
       time: '2:00 PM - 2:45 PM',
-      title: 'Bug Bounty Buzz',
-      description: 'Insights from ethical hackers and bug hunters on vulnerability reporting',
+      title: 'Innovation Showcase',
+      description: 'Student projects, security tools, and community initiatives solving real-world problems',
       icon: Bug,
       type: 'workshop'
     },
     {
       time: '2:45 PM - 3:00 PM',
-      title: 'Joint Session Warm-up',
-      description: 'Overview of collaborative initiatives and agenda for technical demonstrations',
+      title: 'Closing Panel: The Next Five Years',
+      description: 'Experts discuss careers, research, responsible innovation, and the future of cybersecurity',
       icon: Zap,
       type: 'session'
     },
     {
       time: '3:00 PM - 4:30 PM',
-      title: 'Red Team Live',
-      description: 'Team tradecraft, advanced command-and-control (C2) frameworks, and live attack techniques by T.A.S.C & CYSCOM - VIT Chennai',
+      title: 'Live Demo Arena',
+      description: 'Technical demonstrations from T.A.S.C, CYSCOM, and invited security communities',
       icon: Flame,
       type: 'workshop'
     },
     {
       time: '4:30 PM - 5:00 PM',
-      title: 'Wrap-up & Clicks',
-      description: 'Certificate distribution, memorable moments, and group photos with dignitaries, speakers, and participants',
+      title: 'Awards, Certificates & Closing',
+      description: 'Celebrate participant achievements, announce challenge winners, and close CyberConverge 2026',
       icon: Award,
       type: 'session'
     }
   ];
 
-  const currentSchedule = activeDay === 1 ? day1Schedule : day2Schedule;
+  const schedules = [day1Schedule, day2Schedule, day3Schedule, day4Schedule, day5Schedule, day6Schedule];
+  const currentSchedule = schedules[activeDay - 1];
 
   const getEventTypeColor = (type: string) => {
     switch (type) {
       case 'workshop': return 'from-emerald-500 to-emerald-700';
+      case 'seminar': return 'from-cyan-400 to-blue-500';
       case 'session': return 'from-emerald-400 to-emerald-600';
       case 'break': return 'from-orange-400 to-red-400';
       case 'networking': return 'from-green-400 to-teal-400';
@@ -153,6 +356,7 @@ const Timeline: React.FC = () => {
   const getEventTypeBorder = (type: string) => {
     switch (type) {
       case 'workshop': return 'border-emerald-500/50';
+      case 'seminar': return 'border-cyan-400/50';
       case 'session': return 'border-emerald-400/50';
       case 'break': return 'border-orange-400/50';
       case 'networking': return 'border-green-400/50';
@@ -169,36 +373,38 @@ const Timeline: React.FC = () => {
           Event Timeline
         </h3>
         <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-          Two days of intensive cybersecurity learning, competitions, and networking
+          Six days of intensive cybersecurity learning, seminars, workshops, competitions, and networking
         </p>
       </div>
 
       {/* Day Switcher */}
       <div className="flex justify-center mb-12 px-4">
-        <div className="cyber-card w-full sm:w-auto bg-gray-800/60 border border-gray-700 rounded-2xl p-2 backdrop-blur-sm">
-          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
-            <button
-              onClick={() => setActiveDay(1)}
-              className={`px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 ${
-                activeDay === 1
-                  ? 'bg-gradient-to-r from-emerald-400 to-emerald-700 text-black shadow-lg shadow-emerald-400/25'
-                  : 'text-gray-400 hover:text-white hover:bg-gray-700/50'
-              }`}
-            >
-              <span className="hidden sm:inline">Day 1 - CTF & Workshop</span>
-              <span className="sm:hidden">CTF & Workshop</span>
-            </button>
-            <button
-              onClick={() => setActiveDay(2)}
-              className={`px-4 sm:px-8 py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 ${
-                activeDay === 2
-                  ? 'bg-gradient-to-r from-emerald-400 to-emerald-700 text-black shadow-lg shadow-emerald-400/25'
-                  : 'text-gray-400 hover:text-white hover:bg-gray-700/50'
-              }`}
-            >
-              <span className="hidden sm:inline">Day 2 - Conference</span>
-              <span className="sm:hidden">Conference</span>
-            </button>
+        <div className="cyber-card w-full max-w-5xl bg-gray-800/60 border border-gray-700 rounded-2xl p-2 backdrop-blur-sm">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+            {[
+              'CTF',
+              'AppSec',
+              'Blue Team',
+              'Cloud & DevSecOps',
+              'Red Team',
+              'Summit & Awards'
+            ].map((label, index) => {
+              const day = (index + 1) as 1 | 2 | 3 | 4 | 5 | 6;
+              return (
+                <button
+                  key={label}
+                  onClick={() => setActiveDay(day)}
+                  className={`px-3 py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${
+                    activeDay === day
+                      ? 'bg-gradient-to-r from-emerald-400 to-emerald-700 text-black shadow-lg shadow-emerald-400/25'
+                      : 'text-gray-400 hover:text-white hover:bg-gray-700/50'
+                  }`}
+                >
+                  <span className="block text-xs opacity-70">Day {day}</span>
+                  {label}
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -241,6 +447,7 @@ const Timeline: React.FC = () => {
                         <p className="text-gray-300 leading-relaxed">{event.description}</p>
                         <div className={`inline-block mt-3 px-3 py-1 rounded-full text-xs font-semibold ${
                           event.type === 'workshop' ? 'bg-emerald-500/20 text-emerald-500' :
+                            event.type === 'seminar' ? 'bg-cyan-400/20 text-cyan-400' :
                             event.type === 'session' ? 'bg-emerald-400/20 text-emerald-400' :
                           event.type === 'break' ? 'bg-orange-400/20 text-orange-400' :
                           event.type === 'networking' ? 'bg-green-400/20 text-green-400' :
@@ -322,6 +529,7 @@ const Timeline: React.FC = () => {
                         <p className="text-gray-300 text-sm leading-relaxed">{event.description}</p>
                         <div className={`inline-block mt-3 px-3 py-1 rounded-full text-xs font-semibold ${
                           event.type === 'workshop' ? 'bg-emerald-500/20 text-emerald-500' :
+                            event.type === 'seminar' ? 'bg-cyan-400/20 text-cyan-400' :
                             event.type === 'session' ? 'bg-emerald-400/20 text-emerald-400' :
                           event.type === 'break' ? 'bg-orange-400/20 text-orange-400' :
                           event.type === 'networking' ? 'bg-green-400/20 text-green-400' :
@@ -347,12 +555,20 @@ const Timeline: React.FC = () => {
       <div className="mt-16 text-center">
         <div className="cyber-card inline-block p-8 bg-gradient-to-br from-gray-800/60 to-gray-900/80 border border-emerald-400/30 rounded-2xl backdrop-blur-sm">
           <h4 className="text-2xl font-bold text-emerald-400 mb-4">
-            {activeDay === 1 ? 'Day 1 Focus' : 'Day 2 Focus'}
+            {activeDay === 1 ? 'Day 1 Focus' : activeDay === 2 ? 'Day 2 Focus' : activeDay === 3 ? 'Day 3 Focus' : activeDay === 4 ? 'Day 4 Focus' : activeDay === 5 ? 'Day 5 Focus' : 'Day 6 Focus'}
           </h4>
           <p className="text-gray-300 max-w-2xl">
-            {activeDay === 1 
-              ? 'Hands-on technical workshops, CTF competitions, and practical cybersecurity skill building'
-              : 'Expert talks, industry insights, networking with law enforcement, and advanced security demonstrations'
+            {activeDay === 1
+              ? 'Capture-the-flag competition, Kali setup, and hands-on offensive security challenges'
+              : activeDay === 2
+                ? 'Application security seminars, secure coding, and practical API defense workshops'
+                : activeDay === 3
+                  ? 'SOC operations, digital forensics, incident response, and blue team labs'
+                  : activeDay === 4
+                    ? 'Cloud security, DevSecOps, architecture, and infrastructure defense'
+                    : activeDay === 5
+                      ? 'Bug bounty, red team tradecraft, purple team competition, and findings showcase'
+                      : 'Keynotes, research seminars, innovation demos, awards, and closing celebration'
             }
           </p>
         </div>

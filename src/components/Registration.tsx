@@ -64,14 +64,14 @@ const Registration: React.FC<RegistrationProps> = ({ selectedDay, onBack }) => {
     const dayInfo = {
       day1: {
         title: 'Day 1: CTF Championship',
-        date: 'August 28, 2025',
+        date: 'October 5, 2026',
         description: 'Focus on penetration testing, web security, and offensive techniques',
         color: 'emerald',
         topics: ['Web Application Testing', 'Network Penetration', 'Social Engineering', 'OSINT Techniques']
       },
       day2: {
         title: 'Day 2: Cyber Security Summit',
-        date: 'August 29, 2025', 
+        date: 'October 10, 2026', 
         description: 'Emphasis on digital forensics, incident response, and defensive strategies',
         color: 'cyan',
         topics: ['Digital Forensics', 'Malware Analysis', 'Incident Response', 'Security Monitoring']
@@ -249,7 +249,7 @@ const Registration: React.FC<RegistrationProps> = ({ selectedDay, onBack }) => {
               </button>
               
               <div className="inline-block px-10 py-4 bg-gradient-to-r from-emerald-400 to-lime-300 text-black font-bold rounded-2xl text-lg transform hover:scale-105 transition-all duration-300">
-                See you at CyberConverge 2025! 🚀
+                See you at CyberConverge 2026! 🚀
               </div>
             </div>
           </div>
@@ -351,7 +351,7 @@ const Registration: React.FC<RegistrationProps> = ({ selectedDay, onBack }) => {
                     <div className="flex items-start space-x-3">
                       <span className="flex-shrink-0 w-6 h-6 bg-emerald-400 text-black rounded-full flex items-center justify-center text-sm font-bold">3</span>
                       <p className="text-gray-300">
-                        Payment deadline: <span className="text-emerald-400 font-semibold">August 27, 2025 (11:59 PM)</span>
+                        Payment deadline: <span className="text-emerald-400 font-semibold">October 4, 2026 (11:59 PM)</span>
                       </p>
                     </div>
                     

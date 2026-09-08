@@ -12,7 +12,7 @@ const DaySelection: React.FC<DaySelectionProps> = ({ onDaySelect }) => {
     day1: {
       title: 'Day 1: CTF Championship',
       subtitle: 'Capture The Flag',
-      date: 'August 28, 2025',
+      date: 'October 5, 2026',
       time: '8:00 AM - 5:00 PM',
       capacity: '₹150',
       description: 'Compete in a high-energy Capture The Flag with progressive challenges and team play',
@@ -35,7 +35,7 @@ const DaySelection: React.FC<DaySelectionProps> = ({ onDaySelect }) => {
     day2: {
       title: 'Day 2: Cyber Security Summit',
       subtitle: 'Learn & Network',
-      date: 'August 29, 2025',
+      date: 'October 10, 2026',
       time: '8:00 AM - 5:00 PM',
       capacity: 'Free',
       description: 'Expert talks, panels, and demos from industry leaders and law enforcement',
@@ -86,7 +86,7 @@ const DaySelection: React.FC<DaySelectionProps> = ({ onDaySelect }) => {
             <div className="absolute -bottom-8 -left-12 w-20 h-20 border-2 border-cyan-400/20 rounded-full animate-pulse"></div>
           </div>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto mt-8 leading-relaxed">
-            CyberConverge 2025 offers two specialized tracks. Click on each day to explore detailed content 
+            CyberConverge 2026 offers six days of specialized tracks. Click on each day to explore detailed content
             and register for your preferred security specialization.
           </p>
         </div>

@@ -74,9 +74,9 @@ const Hero: React.FC = () => {
               {/* Event Details */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 mb-8">
                 <div className="text-center p-4 border border-emerald-400/30 rounded-lg bg-gray-800/30 backdrop-blur-sm font-mono">
-                  <div className="text-2xl font-bold text-emerald-400">AUG</div>
-                  <div className="text-2xl font-bold text-white">28-29</div>
-                  <div className="text-xl text-emerald-400">2025</div>
+                  <div className="text-2xl font-bold text-emerald-400">OCT</div>
+                  <div className="text-2xl font-bold text-white">5-10</div>
+                  <div className="text-xl text-emerald-400">2026</div>
                 </div>
                 <div className="text-center p-4 border border-emerald-400/30 rounded-lg bg-gray-800/30 backdrop-blur-sm font-mono">
                   <div className="text-2xl font-bold text-emerald-400">TIME</div>
