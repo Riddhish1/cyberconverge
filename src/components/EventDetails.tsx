@@ -34,12 +34,12 @@ const EventDetails: React.FC = () => {
 
   const speakers = [
     { 
-      name: 'Dr. Geetha', 
+      name: 'Dr. Harini Mishra', 
       role: 'Faculty Coordinator', 
       specialty: 'CYSCOM VIT CHENNAI'
     },
     { 
-      name: 'Dr. P. Nithyanandam', 
+      name: 'Dr. Z. Kumar', 
       role: 'Faculty Coordinator', 
       specialty: 'CYSCOM VIT CHENNAI'
     }
