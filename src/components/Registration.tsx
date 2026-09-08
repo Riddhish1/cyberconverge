@@ -370,7 +370,7 @@ const Registration: React.FC<RegistrationProps> = ({ selectedDay, onBack }) => {
                     If you face any issues with payment or have questions about your registration:
                   </p>
                   <p className="text-cyan-300">
-                    Contact us on WhatsApp: <span className="font-mono">+91 93243 84817</span>
+                    Contact us on WhatsApp: <span className="font-mono">+91 93721 85950</span>
                   </p>
                 </div>
 

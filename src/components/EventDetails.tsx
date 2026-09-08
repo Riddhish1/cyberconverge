@@ -341,17 +341,8 @@ const EventDetails: React.FC = () => {
                       <span className="text-cyan-400 font-bold text-xl">V</span>
                     </div>
                     <h5 className="text-white font-semibold mb-1">Vijval</h5>
-                    <p className="text-cyan-400 font-mono text-sm">+91 93243 84817</p>
+                    <p className="text-cyan-400 font-mono text-sm">+91 93721 85950</p>
                     <p className="text-gray-400 text-xs mt-1">Registration & General Queries</p>
-                  </div>
-
-                  <div className="text-center p-4 bg-gray-800/50 rounded-lg border border-yellow-400/30">
-                    <div className="w-16 h-16 bg-yellow-400/20 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <span className="text-yellow-400 font-bold text-xl">HOD</span>
-                    </div>
-                    <h5 className="text-white font-semibold mb-1">HOD Contact</h5>
-                    <p className="text-yellow-400 font-mono text-sm">+91 7702 669 040</p>
-                    <p className="text-gray-400 text-xs mt-1">Department Head</p>
                   </div>
                 </div>
               </div>
