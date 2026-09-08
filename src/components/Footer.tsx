@@ -42,6 +42,10 @@ const Footer: React.FC = () => {
                 <span>+91 98906 62736 (Harsh)</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
+                <Phone className="w-5 h-5 text-yellow-400" />
+                <span>+91 7702 669 040 (HOD Contact)</span>
+              </div>
+              <div className="flex items-center space-x-3 text-gray-400">
                 <Mail className="w-5 h-5 text-purple-400" />
                 <span>cyscom@vit.ac.in</span>
               </div>
